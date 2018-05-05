@@ -1,0 +1,34 @@
+C:\Users\Administrator.PC\Desktop\QLKho\QLKho\bin\Debug\QLKho.exe.config
+C:\Users\Administrator.PC\Desktop\QLKho\QLKho\bin\Debug\QLKho.exe
+C:\Users\Administrator.PC\Desktop\QLKho\QLKho\bin\Debug\QLKho.pdb
+C:\Users\Administrator.PC\Desktop\QLKho\QLKho\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Administrator.PC\Desktop\QLKho\QLKho\obj\Debug\QLKho.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.PC\Desktop\QLKho\QLKho\obj\Debug\QLKho.Form1.resources
+C:\Users\Administrator.PC\Desktop\QLKho\QLKho\obj\Debug\QLKho.Properties.Resources.resources
+C:\Users\Administrator.PC\Desktop\QLKho\QLKho\obj\Debug\QLKho.csproj.GenerateResource.Cache
+C:\Users\Administrator.PC\Desktop\QLKho\QLKho\obj\Debug\QLKho.exe
+C:\Users\Administrator.PC\Desktop\QLKho\QLKho\obj\Debug\QLKho.pdb
+C:\Users\Administrator.PC\Desktop\QLKho\QLKho\obj\Debug\QLKho.GUI.UC.ThongKe.UCThongKe.resources
+C:\Users\Administrator.PC\Desktop\QLKho\QLKho\obj\Debug\QLKho.GUI.UC.HangHoa.UCHangHoa.resources
+C:\Users\Administrator.PC\Desktop\QLKho\QLKho\obj\Debug\QLKho.GUI.UC.HoTro.UCHoTro.resources
+C:\Users\Administrator.PC\Desktop\QLKho\QLKho\obj\Debug\QLKho.GUI.UC.NhaCungCap.UCNhaCungCap.resources
+C:\Users\Administrator.PC\Desktop\QLKho\QLKho\obj\Debug\QLKho.GUI.UC.NhapHang.UCNhapHang.resources
+C:\Users\Administrator.PC\Desktop\QLKho\QLKho\obj\Debug\QLKho.GUI.UC.XuatHang.UCXuatHang.resources
+C:\Users\Administrator.PC\Desktop\QLKho\QLKho\obj\Debug\QLKho.GUI.UC.NhanVien.UCNhanVien.resources
+E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\bin\Debug\QLKho.exe.config
+E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.exe
+E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.pdb
+E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\bin\Debug\QLKho.exe
+E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\bin\Debug\QLKho.pdb
+E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\bin\Debug\Bunifu_UI_v1.5.3.dll
+E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.csprojResolveAssemblyReference.cache
+E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.Form1.resources
+E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.GUI.UC.HangHoa.UCHangHoa.resources
+E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.GUI.UC.HoTro.UCHoTro.resources
+E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.GUI.UC.NhaCungCap.UCNhaCungCap.resources
+E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.GUI.UC.NhanVien.UCNhanVien.resources
+E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.GUI.UC.NhapHang.UCNhapHang.resources
+E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.GUI.UC.ThongKe.UCThongKe.resources
+E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.GUI.UC.XuatHang.UCXuatHang.resources
+E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.Properties.Resources.resources
+E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.csproj.GenerateResource.Cache
