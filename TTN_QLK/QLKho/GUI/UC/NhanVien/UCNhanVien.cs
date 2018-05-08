@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using QLKho.DATA;
 
 
 
@@ -46,19 +47,34 @@ namespace QLKho.GUI.UC.NhanVien
             txtTenNhanVien.Text = "";
             txtSDTNhanVien.Text = "";
         }
-
+        string sql = "";
         private void btnSearch_NhanVien_Click(object sender, EventArgs e)
         {
-            if(cbOption_NhanVien.Text.Equals("")) MessageBox.Show("Chọn tiêu chí cần sắp xếp", "ERROR!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            if (cbOption_NhanVien.Text.Equals("Mã Nhân Viên"))
+            try
             {
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-P8I38NF\\SQLEXPRESS;Initial Catalog=QLKho;Integrated Security=True");
+                conn.Open();
+                if (cbOption_NhanVien.Text.Equals("")) MessageBox.Show("Chọn tiêu chí cần sắp xếp", "ERROR!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+                if (cbOption_NhanVien.Text.Equals("Mã Nhân Viên"))
+                {
+                    sql = "select * from NhanVien nv where nv.MaNV='" + txtSearch_NhanVien.Text.Trim() + "'";
+                }
+
+                if (cbOption_NhanVien.Text.Equals("Họ và Tên"))
+                {
+                    sql = "select * from NhanVien nv where  nv.TenNV='" + txtSearch_NhanVien.Text.Trim() + "'";
+                }
+
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgvNhanVien.DataSource = dt;
             }
-
-            if (cbOption_NhanVien.Text.Equals("Họ và Tên"))
+            catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
         }
 

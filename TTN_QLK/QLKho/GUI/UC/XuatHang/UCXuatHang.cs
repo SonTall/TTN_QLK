@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
+using QLKho.DATA;
 namespace QLKho.GUI.UC.XuatHang
 {
     public partial class UCXuatHang : Form
@@ -216,7 +217,50 @@ namespace QLKho.GUI.UC.XuatHang
             dgvXuatHang.Height = this.Height;
             
         }
+        string sql = "";
+        private void btnSearch_XuatHang_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-P8I38NF\\SQLEXPRESS;Initial Catalog=QLKho;Integrated Security=True");
+                conn.Open();
+                if (cbOption_XuatHang.Text.Equals("")) MessageBox.Show("Chọn tiêu chí cần sắp xếp", "ERROR!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-        
+                if (cbOption_XuatHang.Text.Equals("Mã Phiếu Xuất"))
+                {
+                    sql = "select px.MaPX,Manv,MaHH,NgayXuat,SoLuong,GiaXuat,TongTien from ChiTietPX ct, PhieuXuat px where px.MaPX=ct.MaPX  and px.MaPX='" + txtPhieuXuat.Text.Trim() + "'";
+                }
+
+                if (cbOption_XuatHang.Text.Equals("Mã Hàng hóa"))
+                {
+                    sql = "select px.MaPX,Manv,MaHH,NgayXuat,SoLuong,GiaXuat,TongTien from ChiTietPX ct, PhieuXuat px where px.MaPX=ct.MaPX  and MaHH='" + txtMaHangHoa.Text.Trim() + "'";
+                }
+
+                if (cbOption_XuatHang.Text.Equals("Mã Nhân viên"))
+                {
+                    sql = "select px.MaPX,Manv,MaHH,NgayXuat,SoLuong,GiaXuat,TongTien from ChiTietPX ct, PhieuXuat px where px.MaPX=ct.MaPX  and Manv='" + txtMaNhanVien.Text.Trim() + "'";
+                }
+
+               
+                if (cbOption_XuatHang.Text.Equals("Giá Nhập"))
+                {
+                    sql = "select px.MaPX,Manv,MaHH,NgayXuat,SoLuong,GiaXuat,TongTien from ChiTietPX ct, PhieuXuat px where px.MaPX=ct.MaPX   and GiaXuat='" + txtGiaXuat.Text.Trim() + "'";
+                }
+
+                if (cbOption_XuatHang.Text.Equals("Số lượng"))
+                {
+                    sql = "select px.MaPX,Manv,MaHH,NgayXuat,SoLuong,GiaXuat,TongTien from ChiTietPX ct, PhieuXuat px where px.MaPX=ct.MaPX   and SoLuong='" + txtSoLuong.Text.Trim() + "'";
+                }
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgvXuatHang.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

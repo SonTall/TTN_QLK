@@ -32,3 +32,19 @@ E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.
 E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.GUI.UC.XuatHang.UCXuatHang.resources
 E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.Properties.Resources.resources
 E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.csproj.GenerateResource.Cache
+C:\Users\asus\Desktop\ttnhom\TTN_QLK\TTN_QLK\QLKho\bin\Debug\QLKho.exe.config
+C:\Users\asus\Desktop\ttnhom\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.exe
+C:\Users\asus\Desktop\ttnhom\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.pdb
+C:\Users\asus\Desktop\ttnhom\TTN_QLK\TTN_QLK\QLKho\bin\Debug\QLKho.exe
+C:\Users\asus\Desktop\ttnhom\TTN_QLK\TTN_QLK\QLKho\bin\Debug\QLKho.pdb
+C:\Users\asus\Desktop\ttnhom\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\ttnhom\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.Form1.resources
+C:\Users\asus\Desktop\ttnhom\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.HangHoa.UCHangHoa.resources
+C:\Users\asus\Desktop\ttnhom\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.HoTro.UCHoTro.resources
+C:\Users\asus\Desktop\ttnhom\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.NhaCungCap.UCNhaCungCap.resources
+C:\Users\asus\Desktop\ttnhom\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.NhanVien.UCNhanVien.resources
+C:\Users\asus\Desktop\ttnhom\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.NhapHang.UCNhapHang.resources
+C:\Users\asus\Desktop\ttnhom\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.ThongKe.UCThongKe.resources
+C:\Users\asus\Desktop\ttnhom\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.XuatHang.UCXuatHang.resources
+C:\Users\asus\Desktop\ttnhom\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.Properties.Resources.resources
+C:\Users\asus\Desktop\ttnhom\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.csproj.GenerateResource.Cache
