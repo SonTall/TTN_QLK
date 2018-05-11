@@ -12,6 +12,7 @@ namespace QLKho.GUI.UC.NhaCungCap
 {
     public partial class UCNhaCungCap : Form
     {
+        bool kt;
         public UCNhaCungCap()
         {
             InitializeComponent();
@@ -81,6 +82,7 @@ namespace QLKho.GUI.UC.NhaCungCap
 
         private void btnThem_NCC_Click(object sender, EventArgs e)
         {
+            kt = true;
             pnlThongTin_NCC.Visible = true;
             dgvNhaCungCap.Height = this.Height;
             ClearText();
@@ -89,12 +91,21 @@ namespace QLKho.GUI.UC.NhaCungCap
 
         private void btnSua_NCC_Click(object sender, EventArgs e)
         {
+            kt = false;
             OpenControl();
         }
 
         private void btnXoa_NCC_Click(object sender, EventArgs e)
         {
-
+            DialogResult check = MessageBox.Show("Bạn có muốn xóa không", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (check == DialogResult.Yes)
+            {
+                ENTITY.NhaCungCap ncc = new ENTITY.NhaCungCap(txtMaNCC.Text.Trim(), txtTenNCC.Text.Trim(), txtSDTNCC.Text.Trim());
+                DATA.NhaCungCap_Controller n = new DATA.NhaCungCap_Controller();
+                n.deleteNhaCungCap(ncc);
+            }
+            loadDataGirdView();
+            LockControl();
         }
 
         private void btnBack_NCC_Click(object sender, EventArgs e)
@@ -111,8 +122,16 @@ namespace QLKho.GUI.UC.NhaCungCap
         private void btnLuu_NCC_Click(object sender, EventArgs e)
         {
             ENTITY.NhaCungCap ncc = new ENTITY.NhaCungCap(txtMaNCC.Text.Trim(), txtTenNCC.Text.Trim(), txtSDTNCC.Text.Trim());
-            DATA.AddNCC c = new DATA.AddNCC();
-            c.addNCC(ncc);
+            if (kt == true)
+            {
+                DATA.AddNCC c = new DATA.AddNCC();
+                c.addNCC(ncc);
+            }
+            else
+            {
+                DATA.NhaCungCap_Controller n = new DATA.NhaCungCap_Controller();
+                n.editNhaCungCap(ncc);
+            }
             loadDataGirdView();
             LockControl();
         }
@@ -141,6 +160,25 @@ namespace QLKho.GUI.UC.NhaCungCap
         private void dgvNhaCungCap_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void dgvNhaCungCap_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvNhaCungCap_MouseClick_1(object sender, MouseEventArgs e)
+        {
+            LockControl();
+            pnlThongTin_NCC.Visible = true;
+            dgvNhaCungCap.Height = 481;
+
+            if (dgvNhaCungCap.Rows.Count > 0)
+            {
+                txtMaNCC.Text = dgvNhaCungCap.SelectedRows[0].Cells[0].Value.ToString();
+                txtTenNCC.Text = dgvNhaCungCap.SelectedRows[0].Cells[1].Value.ToString();
+                txtSDTNCC.Text = dgvNhaCungCap.SelectedRows[0].Cells[2].Value.ToString();
+            }
         }
     }
 }

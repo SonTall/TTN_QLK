@@ -32,3 +32,21 @@ E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.
 E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.GUI.UC.XuatHang.UCXuatHang.resources
 E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.Properties.Resources.resources
 E:\Learn\Thực tập Nhóm\Thực tập nhóm_TH14\QLKho\QLKho\obj\Debug\QLKho.csproj.GenerateResource.Cache
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\bin\Debug\QLKho.exe.config
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\bin\Debug\QLKho.exe
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\bin\Debug\QLKho.pdb
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.csprojResolveAssemblyReference.cache
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.Form1.resources
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.HangHoa.UCHangHoa.resources
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.HoTro.UCHoTro.resources
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.NhaCungCap.UCNhaCungCap.resources
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.NhanVien.UCNhanVien.resources
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.NhapHang.UCNhapHang.resources
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.ThongKe.UCThongKe.resources
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.XuatHang.UCXuatHang.resources
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.Properties.Resources.resources
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.csproj.GenerateResource.cache
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.csproj.CoreCompileInputs.cache
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.csproj.CopyComplete
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.exe
+E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.pdb

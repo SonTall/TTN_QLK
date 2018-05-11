@@ -16,6 +16,7 @@ namespace QLKho.GUI.UC.NhanVien
 {
     public partial class UCNhanVien : Form
     {
+        bool kt;
         public UCNhanVien()
         {
             InitializeComponent();
@@ -36,7 +37,8 @@ namespace QLKho.GUI.UC.NhanVien
             txtTenNhanVien.Enabled = true;
             txtSDTNhanVien.Enabled = true;
             btnClearText_NhanVien.Enabled = true;
-            btnClearText_NhanVien.Enabled = true;
+            //btnClearText_NhanVien.Enabled = true;
+            btnLuu_NhanVien.Enabled = true;
         }
 
         private void ClearText()
@@ -98,6 +100,7 @@ namespace QLKho.GUI.UC.NhanVien
 
         private void btnThem_NhanVien_Click(object sender, EventArgs e)
         {
+            kt = true;
             pnlThongTin_NhanVien.Visible = true;
             dgvNhanVien.Height = this.Height;
             ClearText();
@@ -120,6 +123,7 @@ namespace QLKho.GUI.UC.NhanVien
         
         private void btnSua_NhanVien_Click(object sender, EventArgs e)
         {
+            kt = false;
             OpenControl();
         }
 
@@ -132,8 +136,16 @@ namespace QLKho.GUI.UC.NhanVien
         private void btnLuu_NhanVien_Click(object sender, EventArgs e)
         {
             ENTITY.NhanVien bd = new ENTITY.NhanVien(txtMaNhanVien.Text.Trim(), txtTenNhanVien.Text.Trim(), txtSDTNhanVien.Text.Trim());
-            DATA.AddNhanVien b = new DATA.AddNhanVien();
-            b.addNhanVien(bd);
+            if (kt==true)
+            {
+                DATA.AddNhanVien b = new DATA.AddNhanVien();
+                b.addNhanVien(bd);
+            }
+            else
+            {
+                DATA.NhanVien_Controller n = new DATA.NhanVien_Controller();
+                n.editNhanVien(bd);
+            }
             loadDataGirdView();
             LockControl();
         }
@@ -145,7 +157,15 @@ namespace QLKho.GUI.UC.NhanVien
 
         private void btnXoa_NhanVien_Click(object sender, EventArgs e)
         {
-
+            DialogResult check = MessageBox.Show("Bạn có muốn xóa không", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (check == DialogResult.Yes)
+            {
+                ENTITY.NhanVien n = new ENTITY.NhanVien(txtMaNhanVien.Text.Trim(), txtTenNhanVien.Text.Trim(), txtSDTNhanVien.Text.Trim());
+                DATA.NhanVien_Controller nv = new DATA.NhanVien_Controller();
+                nv.deleteNhanVien(n);
+            }
+            loadDataGirdView();
+            LockControl();
         }
 
         private void dgvNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)

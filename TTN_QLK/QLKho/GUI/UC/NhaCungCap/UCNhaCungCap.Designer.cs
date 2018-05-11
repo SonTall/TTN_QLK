@@ -240,14 +240,14 @@
             // 
             this.cbOption_NCC.BackColor = System.Drawing.SystemColors.Control;
             this.cbOption_NCC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbOption_NCC.Font = new System.Drawing.Font("UTM Essendine Caps", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbOption_NCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbOption_NCC.FormattingEnabled = true;
             this.cbOption_NCC.Items.AddRange(new object[] {
             "Mã Nhà Cung Cấp",
             "Họ và Tên"});
             this.cbOption_NCC.Location = new System.Drawing.Point(293, 22);
             this.cbOption_NCC.Name = "cbOption_NCC";
-            this.cbOption_NCC.Size = new System.Drawing.Size(149, 31);
+            this.cbOption_NCC.Size = new System.Drawing.Size(149, 28);
             this.cbOption_NCC.TabIndex = 1;
             this.cbOption_NCC.Tag = "";
             // 
@@ -293,6 +293,8 @@
             this.dgvNhaCungCap.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvNhaCungCap.Size = new System.Drawing.Size(1129, 396);
             this.dgvNhaCungCap.TabIndex = 15;
+            this.dgvNhaCungCap.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhaCungCap_CellContentClick_1);
+            this.dgvNhaCungCap.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgvNhaCungCap_MouseClick_1);
             // 
             // UCNhaCungCap
             // 

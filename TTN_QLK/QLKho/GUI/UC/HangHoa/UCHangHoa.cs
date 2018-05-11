@@ -13,6 +13,8 @@ namespace QLKho.GUI.UC.HangHoa
 {
     public partial class UCHangHoa : Form
     {
+        bool kt;
+
         public UCHangHoa()
         {
             InitializeComponent();
@@ -35,7 +37,7 @@ namespace QLKho.GUI.UC.HangHoa
             txtDonVi.Enabled = true;
             txtMaNCC.Enabled = true;
             btnClearText_HangHoa.Enabled = true;
-            btnClearText_HangHoa.Enabled = true;
+            btnLuu_HangHoa.Enabled = true;
         }
 
         private void ClearText()
@@ -52,6 +54,7 @@ namespace QLKho.GUI.UC.HangHoa
             loadDataGirdView();
             pnlThongTin_HangHoa.Visible = false;
             dgvHangHoa.Height = this.Height;
+            LockControl();
         }
 
         private void DataGridViewColStyle()
@@ -109,6 +112,7 @@ namespace QLKho.GUI.UC.HangHoa
 
         private void btnThem_HangHoa_Click(object sender, EventArgs e)
         {
+            kt = true;
             pnlThongTin_HangHoa.Visible = true;
             dgvHangHoa.Height = this.Height;
             ClearText();
@@ -117,12 +121,21 @@ namespace QLKho.GUI.UC.HangHoa
 
         private void btnSua_HangHoa_Click(object sender, EventArgs e)
         {
-
+            kt = false;
+            OpenControl();
         }
 
         private void btnXoa_HangHoa_Click(object sender, EventArgs e)
         {
-
+            DialogResult check = MessageBox.Show("Bạn có muốn xóa không", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (check == DialogResult.Yes)
+            {
+                ENTITY.HangHoa hh = new ENTITY.HangHoa(txtMaHangHoa.Text.Trim(), txtTenHangHoa.Text.Trim(), txtDonVi.Text.Trim(), txtMaNCC.Text.Trim());
+                DATA.HangHoa_Controller h = new DATA.HangHoa_Controller();
+                h.deleteHangHoa(hh);
+            }
+            loadDataGirdView();
+            LockControl();
         }
 
         private void btnBack_HangHoa_Click(object sender, EventArgs e)
@@ -139,11 +152,23 @@ namespace QLKho.GUI.UC.HangHoa
         private void btnLuu_HangHoa_Click(object sender, EventArgs e)
         {
             ENTITY.HangHoa hh = new ENTITY.HangHoa(txtMaHangHoa.Text.Trim(), txtTenHangHoa.Text.Trim(), txtDonVi.Text.Trim(), txtMaNCC.Text.Trim());
-
-            DATA.AddHangHoa b = new DATA.AddHangHoa();
-            b.addHangHoa(hh);
+            if (kt == true)
+            {
+                DATA.AddHangHoa b = new DATA.AddHangHoa();
+                b.addHangHoa(hh);
+            }
+            else
+            {
+                DATA.HangHoa_Controller h = new DATA.HangHoa_Controller();
+                h.editHangHoa(hh);
+            }
             loadDataGirdView();
             LockControl();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
