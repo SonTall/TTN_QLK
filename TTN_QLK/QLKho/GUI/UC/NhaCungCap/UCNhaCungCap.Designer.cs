@@ -55,19 +55,19 @@
             // 
             // txtSDTNCC
             // 
-            this.txtSDTNCC.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSDTNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDTNCC.Location = new System.Drawing.Point(915, 13);
             this.txtSDTNCC.Name = "txtSDTNCC";
-            this.txtSDTNCC.Size = new System.Drawing.Size(193, 23);
+            this.txtSDTNCC.Size = new System.Drawing.Size(193, 22);
             this.txtSDTNCC.TabIndex = 45;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(818, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 17);
+            this.label2.Size = new System.Drawing.Size(86, 16);
             this.label2.TabIndex = 46;
             this.label2.Text = "Số điện thoại";
             // 
@@ -78,7 +78,7 @@
             this.btnLuu_NCC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnLuu_NCC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnLuu_NCC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu_NCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu_NCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu_NCC.Location = new System.Drawing.Point(952, 49);
             this.btnLuu_NCC.Name = "btnLuu_NCC";
             this.btnLuu_NCC.Size = new System.Drawing.Size(100, 32);
@@ -94,7 +94,7 @@
             this.btnBack_NCC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBack_NCC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBack_NCC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack_NCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack_NCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack_NCC.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnBack_NCC.Location = new System.Drawing.Point(700, 49);
             this.btnBack_NCC.Name = "btnBack_NCC";
@@ -129,7 +129,7 @@
             this.btnClearText_NCC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Violet;
             this.btnClearText_NCC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
             this.btnClearText_NCC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearText_NCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearText_NCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClearText_NCC.Location = new System.Drawing.Point(826, 49);
             this.btnClearText_NCC.Name = "btnClearText_NCC";
             this.btnClearText_NCC.Size = new System.Drawing.Size(100, 32);
@@ -140,37 +140,37 @@
             // 
             // txtMaNCC
             // 
-            this.txtMaNCC.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNCC.Location = new System.Drawing.Point(140, 13);
             this.txtMaNCC.Name = "txtMaNCC";
-            this.txtMaNCC.Size = new System.Drawing.Size(226, 23);
+            this.txtMaNCC.Size = new System.Drawing.Size(226, 22);
             this.txtMaNCC.TabIndex = 16;
             // 
             // txtTenNCC
             // 
-            this.txtTenNCC.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenNCC.Location = new System.Drawing.Point(480, 13);
             this.txtTenNCC.Name = "txtTenNCC";
-            this.txtTenNCC.Size = new System.Drawing.Size(300, 23);
+            this.txtTenNCC.Size = new System.Drawing.Size(300, 22);
             this.txtTenNCC.TabIndex = 7;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(9, 16);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(125, 17);
+            this.label10.Size = new System.Drawing.Size(113, 16);
             this.label10.TabIndex = 44;
             this.label10.Text = "Mã Nhà cung cấp";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(391, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 17);
+            this.label1.Size = new System.Drawing.Size(71, 16);
             this.label1.TabIndex = 35;
             this.label1.Text = "Họ và Tên";
             // 
@@ -195,7 +195,7 @@
             this.btnXoa_NCC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Tomato;
             this.btnXoa_NCC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato;
             this.btnXoa_NCC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa_NCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa_NCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa_NCC.Location = new System.Drawing.Point(952, 18);
             this.btnXoa_NCC.Name = "btnXoa_NCC";
             this.btnXoa_NCC.Size = new System.Drawing.Size(100, 32);
@@ -211,7 +211,7 @@
             this.btnSua_NCC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SeaGreen;
             this.btnSua_NCC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
             this.btnSua_NCC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua_NCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua_NCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua_NCC.Location = new System.Drawing.Point(826, 18);
             this.btnSua_NCC.Name = "btnSua_NCC";
             this.btnSua_NCC.Size = new System.Drawing.Size(100, 32);
@@ -227,7 +227,7 @@
             this.btnThem_NCC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
             this.btnThem_NCC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
             this.btnThem_NCC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem_NCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem_NCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem_NCC.Location = new System.Drawing.Point(700, 18);
             this.btnThem_NCC.Name = "btnThem_NCC";
             this.btnThem_NCC.Size = new System.Drawing.Size(100, 32);
@@ -253,10 +253,10 @@
             // 
             // txtSearch_NCC
             // 
-            this.txtSearch_NCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch_NCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch_NCC.Location = new System.Drawing.Point(12, 22);
             this.txtSearch_NCC.Name = "txtSearch_NCC";
-            this.txtSearch_NCC.Size = new System.Drawing.Size(275, 27);
+            this.txtSearch_NCC.Size = new System.Drawing.Size(275, 26);
             this.txtSearch_NCC.TabIndex = 0;
             // 
             // btnSearch_NCC
@@ -267,6 +267,7 @@
             this.btnSearch_NCC.Size = new System.Drawing.Size(38, 34);
             this.btnSearch_NCC.TabIndex = 2;
             this.btnSearch_NCC.UseVisualStyleBackColor = true;
+            this.btnSearch_NCC.Click += new System.EventHandler(this.btnSearch_NCC_Click);
             // 
             // dgvNhaCungCap
             // 
@@ -276,7 +277,7 @@
             this.dgvNhaCungCap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -293,8 +294,6 @@
             this.dgvNhaCungCap.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvNhaCungCap.Size = new System.Drawing.Size(1129, 396);
             this.dgvNhaCungCap.TabIndex = 15;
-            this.dgvNhaCungCap.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhaCungCap_CellContentClick_1);
-            this.dgvNhaCungCap.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgvNhaCungCap_MouseClick_1);
             // 
             // UCNhaCungCap
             // 

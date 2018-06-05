@@ -8,13 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using QLKho.DATA;
 
 namespace QLKho.GUI.UC.HangHoa
 {
     public partial class UCHangHoa : Form
     {
-        bool kt;
-
         public UCHangHoa()
         {
             InitializeComponent();
@@ -37,7 +36,7 @@ namespace QLKho.GUI.UC.HangHoa
             txtDonVi.Enabled = true;
             txtMaNCC.Enabled = true;
             btnClearText_HangHoa.Enabled = true;
-            btnLuu_HangHoa.Enabled = true;
+            btnClearText_HangHoa.Enabled = true;
         }
 
         private void ClearText()
@@ -54,7 +53,6 @@ namespace QLKho.GUI.UC.HangHoa
             loadDataGirdView();
             pnlThongTin_HangHoa.Visible = false;
             dgvHangHoa.Height = this.Height;
-            LockControl();
         }
 
         private void DataGridViewColStyle()
@@ -91,28 +89,42 @@ namespace QLKho.GUI.UC.HangHoa
         {
 
         }
-
+       
+        
+        string sql = "";
         private void btnSearch_HangHoa_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-P8I38NF\\SQLEXPRESS;Initial Catalog=QLKho;Integrated Security=True");
+                conn.Open();
                 if (cbOption_HangHoa.Text.Equals("")) MessageBox.Show("Chọn tiêu chí cần sắp xếp", "ERROR!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 if (cbOption_HangHoa.Text.Equals("Mã Hàng Hóa"))
                 {
-
+                    sql = "select hh.MaHH,TenHH,DonVi from HangHoa hh,NhaCungCap ncc where hh.MaNCC=ncc.MaNCC and hh.MaHH='" + txtSearch_HangHoa.Text.Trim() + "'";
                 }
 
                 if (cbOption_HangHoa.Text.Equals("Tên Hàng Hóa"))
                 {
-
+                    sql = "select hh.MaHH,TenHH,DonVi from HangHoa hh,NhaCungCap ncc where hh.MaNCC=ncc.MaNCC and hh.TenHH='" + txtSearch_HangHoa.Text.Trim() + "'";
                 }
-            
+
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgvHangHoa.DataSource = dt;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         // Xem them tai cac View code cua UCNhanVien,...
 
         private void btnThem_HangHoa_Click(object sender, EventArgs e)
         {
-            kt = true;
             pnlThongTin_HangHoa.Visible = true;
             dgvHangHoa.Height = this.Height;
             ClearText();
@@ -121,21 +133,12 @@ namespace QLKho.GUI.UC.HangHoa
 
         private void btnSua_HangHoa_Click(object sender, EventArgs e)
         {
-            kt = false;
-            OpenControl();
+
         }
 
         private void btnXoa_HangHoa_Click(object sender, EventArgs e)
         {
-            DialogResult check = MessageBox.Show("Bạn có muốn xóa không", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (check == DialogResult.Yes)
-            {
-                ENTITY.HangHoa hh = new ENTITY.HangHoa(txtMaHangHoa.Text.Trim(), txtTenHangHoa.Text.Trim(), txtDonVi.Text.Trim(), txtMaNCC.Text.Trim());
-                DATA.HangHoa_Controller h = new DATA.HangHoa_Controller();
-                h.deleteHangHoa(hh);
-            }
-            loadDataGirdView();
-            LockControl();
+
         }
 
         private void btnBack_HangHoa_Click(object sender, EventArgs e)
@@ -152,23 +155,11 @@ namespace QLKho.GUI.UC.HangHoa
         private void btnLuu_HangHoa_Click(object sender, EventArgs e)
         {
             ENTITY.HangHoa hh = new ENTITY.HangHoa(txtMaHangHoa.Text.Trim(), txtTenHangHoa.Text.Trim(), txtDonVi.Text.Trim(), txtMaNCC.Text.Trim());
-            if (kt == true)
-            {
-                DATA.AddHangHoa b = new DATA.AddHangHoa();
-                b.addHangHoa(hh);
-            }
-            else
-            {
-                DATA.HangHoa_Controller h = new DATA.HangHoa_Controller();
-                h.editHangHoa(hh);
-            }
+
+            DATA.AddHangHoa b = new DATA.AddHangHoa();
+            b.addHangHoa(hh);
             loadDataGirdView();
             LockControl();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

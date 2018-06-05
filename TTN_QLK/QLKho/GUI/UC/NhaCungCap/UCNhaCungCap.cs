@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using QLKho.DATA;
 
 namespace QLKho.GUI.UC.NhaCungCap
 {
     public partial class UCNhaCungCap : Form
     {
-        bool kt;
         public UCNhaCungCap()
         {
             InitializeComponent();
@@ -82,7 +83,6 @@ namespace QLKho.GUI.UC.NhaCungCap
 
         private void btnThem_NCC_Click(object sender, EventArgs e)
         {
-            kt = true;
             pnlThongTin_NCC.Visible = true;
             dgvNhaCungCap.Height = this.Height;
             ClearText();
@@ -91,21 +91,12 @@ namespace QLKho.GUI.UC.NhaCungCap
 
         private void btnSua_NCC_Click(object sender, EventArgs e)
         {
-            kt = false;
             OpenControl();
         }
 
         private void btnXoa_NCC_Click(object sender, EventArgs e)
         {
-            DialogResult check = MessageBox.Show("Bạn có muốn xóa không", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (check == DialogResult.Yes)
-            {
-                ENTITY.NhaCungCap ncc = new ENTITY.NhaCungCap(txtMaNCC.Text.Trim(), txtTenNCC.Text.Trim(), txtSDTNCC.Text.Trim());
-                DATA.NhaCungCap_Controller n = new DATA.NhaCungCap_Controller();
-                n.deleteNhaCungCap(ncc);
-            }
-            loadDataGirdView();
-            LockControl();
+
         }
 
         private void btnBack_NCC_Click(object sender, EventArgs e)
@@ -122,16 +113,8 @@ namespace QLKho.GUI.UC.NhaCungCap
         private void btnLuu_NCC_Click(object sender, EventArgs e)
         {
             ENTITY.NhaCungCap ncc = new ENTITY.NhaCungCap(txtMaNCC.Text.Trim(), txtTenNCC.Text.Trim(), txtSDTNCC.Text.Trim());
-            if (kt == true)
-            {
-                DATA.AddNCC c = new DATA.AddNCC();
-                c.addNCC(ncc);
-            }
-            else
-            {
-                DATA.NhaCungCap_Controller n = new DATA.NhaCungCap_Controller();
-                n.editNhaCungCap(ncc);
-            }
+            DATA.AddNCC c = new DATA.AddNCC();
+            c.addNCC(ncc);
             loadDataGirdView();
             LockControl();
         }
@@ -162,22 +145,36 @@ namespace QLKho.GUI.UC.NhaCungCap
 
         }
 
-        private void dgvNhaCungCap_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        string sql = "";
+       
+
+        private void btnSearch_NCC_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void dgvNhaCungCap_MouseClick_1(object sender, MouseEventArgs e)
-        {
-            LockControl();
-            pnlThongTin_NCC.Visible = true;
-            dgvNhaCungCap.Height = 481;
-
-            if (dgvNhaCungCap.Rows.Count > 0)
+            try
             {
-                txtMaNCC.Text = dgvNhaCungCap.SelectedRows[0].Cells[0].Value.ToString();
-                txtTenNCC.Text = dgvNhaCungCap.SelectedRows[0].Cells[1].Value.ToString();
-                txtSDTNCC.Text = dgvNhaCungCap.SelectedRows[0].Cells[2].Value.ToString();
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-P8I38NF\\SQLEXPRESS;Initial Catalog=QLKho;Integrated Security=True");
+                conn.Open();
+                if (cbOption_NCC.Text.Equals("")) MessageBox.Show("Chọn tiêu chí cần sắp xếp", "ERROR!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                if (cbOption_NCC.Text.Equals("Mã Nhà Cung Cấp"))
+                {
+                    sql = "select * from NhaCungCap ncc where MaNCC='" + txtSearch_NCC.Text.Trim() + "'";
+                }
+
+                if (cbOption_NCC.Text.Equals("Họ Tên"))
+                {
+                    sql = "select ncc.MaNCC, TenNCC,SDT from NhaCungCap ncc,HangHoa hh where ncc.MaNCC=hh.MaNCC and ncc.TenNCC='" + txtSearch_NCC.Text.Trim() + "'";
+                }
+
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgvNhaCungCap.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

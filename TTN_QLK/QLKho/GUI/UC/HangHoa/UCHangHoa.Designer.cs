@@ -43,10 +43,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvHangHoa = new System.Windows.Forms.DataGridView();
-            this.MaHH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenHH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonVi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnXoa_HangHoa = new System.Windows.Forms.Button();
             this.btnSua_HangHoa = new System.Windows.Forms.Button();
@@ -54,6 +50,10 @@
             this.cbOption_HangHoa = new System.Windows.Forms.ComboBox();
             this.txtSearch_HangHoa = new System.Windows.Forms.TextBox();
             this.btnSearch_HangHoa = new System.Windows.Forms.Button();
+            this.MaHH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenHH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonVi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlThongTin_HangHoa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHangHoa)).BeginInit();
             this.panel1.SuspendLayout();
@@ -232,30 +232,6 @@
             this.dgvHangHoa.Size = new System.Drawing.Size(1129, 482);
             this.dgvHangHoa.TabIndex = 13;
             // 
-            // MaHH
-            // 
-            this.MaHH.HeaderText = "Mã Hàng Hóa";
-            this.MaHH.Name = "MaHH";
-            this.MaHH.ReadOnly = true;
-            // 
-            // TenHH
-            // 
-            this.TenHH.HeaderText = "Tên Hàng Hóa";
-            this.TenHH.Name = "TenHH";
-            this.TenHH.ReadOnly = true;
-            // 
-            // DonVi
-            // 
-            this.DonVi.HeaderText = "Đơn Vị";
-            this.DonVi.Name = "DonVi";
-            this.DonVi.ReadOnly = true;
-            // 
-            // MaNCC
-            // 
-            this.MaNCC.HeaderText = "Mã Nhà Cung Cấp";
-            this.MaNCC.Name = "MaNCC";
-            this.MaNCC.ReadOnly = true;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnXoa_HangHoa);
@@ -269,7 +245,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1129, 69);
             this.panel1.TabIndex = 12;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnXoa_HangHoa
             // 
@@ -323,14 +298,14 @@
             // 
             this.cbOption_HangHoa.BackColor = System.Drawing.SystemColors.Control;
             this.cbOption_HangHoa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbOption_HangHoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbOption_HangHoa.Font = new System.Drawing.Font("UTM Essendine Caps", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbOption_HangHoa.FormattingEnabled = true;
             this.cbOption_HangHoa.Items.AddRange(new object[] {
             "Mã Hàng Hóa",
             "Tên Hàng Hóa"});
             this.cbOption_HangHoa.Location = new System.Drawing.Point(293, 22);
             this.cbOption_HangHoa.Name = "cbOption_HangHoa";
-            this.cbOption_HangHoa.Size = new System.Drawing.Size(149, 28);
+            this.cbOption_HangHoa.Size = new System.Drawing.Size(149, 31);
             this.cbOption_HangHoa.TabIndex = 1;
             this.cbOption_HangHoa.Tag = "";
             // 
@@ -351,6 +326,30 @@
             this.btnSearch_HangHoa.TabIndex = 2;
             this.btnSearch_HangHoa.UseVisualStyleBackColor = true;
             this.btnSearch_HangHoa.Click += new System.EventHandler(this.btnSearch_HangHoa_Click);
+            // 
+            // MaHH
+            // 
+            this.MaHH.HeaderText = "Mã Hàng Hóa";
+            this.MaHH.Name = "MaHH";
+            this.MaHH.ReadOnly = true;
+            // 
+            // TenHH
+            // 
+            this.TenHH.HeaderText = "Tên Hàng Hóa";
+            this.TenHH.Name = "TenHH";
+            this.TenHH.ReadOnly = true;
+            // 
+            // DonVi
+            // 
+            this.DonVi.HeaderText = "Đơn Vị";
+            this.DonVi.Name = "DonVi";
+            this.DonVi.ReadOnly = true;
+            // 
+            // MaNCC
+            // 
+            this.MaNCC.HeaderText = "Mã Nhà Cung Cấp";
+            this.MaNCC.Name = "MaNCC";
+            this.MaNCC.ReadOnly = true;
             // 
             // UCHangHoa
             // 

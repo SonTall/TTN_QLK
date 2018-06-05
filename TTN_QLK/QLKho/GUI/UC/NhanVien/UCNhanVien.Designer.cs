@@ -105,14 +105,14 @@
             // 
             this.cbOption_NhanVien.BackColor = System.Drawing.SystemColors.Control;
             this.cbOption_NhanVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbOption_NhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbOption_NhanVien.Font = new System.Drawing.Font("UTM Essendine Caps", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbOption_NhanVien.FormattingEnabled = true;
             this.cbOption_NhanVien.Items.AddRange(new object[] {
             "Mã Nhân Viên",
             "Họ và Tên"});
             this.cbOption_NhanVien.Location = new System.Drawing.Point(293, 22);
             this.cbOption_NhanVien.Name = "cbOption_NhanVien";
-            this.cbOption_NhanVien.Size = new System.Drawing.Size(149, 28);
+            this.cbOption_NhanVien.Size = new System.Drawing.Size(149, 31);
             this.cbOption_NhanVien.TabIndex = 1;
             this.cbOption_NhanVien.Tag = "";
             this.cbOption_NhanVien.SelectedIndexChanged += new System.EventHandler(this.cbOption_NhanVien_SelectedIndexChanged);

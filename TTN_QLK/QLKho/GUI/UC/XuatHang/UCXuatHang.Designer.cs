@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCXuatHang));
             this.label9 = new System.Windows.Forms.Label();
             this.btnXoa_XuatHang = new System.Windows.Forms.Button();
@@ -45,6 +45,7 @@
             this.txtSearch_XuatHang = new System.Windows.Forms.TextBox();
             this.pnlBody_XuatHang = new System.Windows.Forms.Panel();
             this.pnlThongTin = new System.Windows.Forms.Panel();
+            this.label_TongTien = new System.Windows.Forms.Label();
             this.dtNgayXuat = new System.Windows.Forms.DateTimePicker();
             this.btnLuu_XuatHang = new System.Windows.Forms.Button();
             this.btnClearText_XuatHang = new System.Windows.Forms.Button();
@@ -63,7 +64,6 @@
             this.TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSearch_XuatHang = new System.Windows.Forms.Button();
-            this.label_TongTien = new System.Windows.Forms.Label();
             this.pnlBody_XuatHang.SuspendLayout();
             this.pnlThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvXuatHang)).BeginInit();
@@ -73,10 +73,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(9, 101);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(98, 17);
+            this.label9.Size = new System.Drawing.Size(90, 16);
             this.label9.TabIndex = 43;
             this.label9.Text = "Mã Nhân viên";
             // 
@@ -87,7 +87,7 @@
             this.btnXoa_XuatHang.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Tomato;
             this.btnXoa_XuatHang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato;
             this.btnXoa_XuatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa_XuatHang.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa_XuatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa_XuatHang.Location = new System.Drawing.Point(1001, 20);
             this.btnXoa_XuatHang.Name = "btnXoa_XuatHang";
             this.btnXoa_XuatHang.Size = new System.Drawing.Size(100, 32);
@@ -103,7 +103,7 @@
             this.btnSua_XuatHang.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SeaGreen;
             this.btnSua_XuatHang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
             this.btnSua_XuatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua_XuatHang.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua_XuatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua_XuatHang.Location = new System.Drawing.Point(875, 20);
             this.btnSua_XuatHang.Name = "btnSua_XuatHang";
             this.btnSua_XuatHang.Size = new System.Drawing.Size(100, 32);
@@ -119,7 +119,7 @@
             this.btnThem_XuatHang.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
             this.btnThem_XuatHang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
             this.btnThem_XuatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem_XuatHang.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem_XuatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem_XuatHang.Location = new System.Drawing.Point(749, 20);
             this.btnThem_XuatHang.Name = "btnThem_XuatHang";
             this.btnThem_XuatHang.Size = new System.Drawing.Size(100, 32);
@@ -132,7 +132,7 @@
             // 
             this.cbOption_XuatHang.BackColor = System.Drawing.SystemColors.Control;
             this.cbOption_XuatHang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbOption_XuatHang.Font = new System.Drawing.Font("UTM Helve", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbOption_XuatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbOption_XuatHang.FormattingEnabled = true;
             this.cbOption_XuatHang.Items.AddRange(new object[] {
             "Mã Phiếu xuất",
@@ -143,84 +143,84 @@
             "Số lượng"});
             this.cbOption_XuatHang.Location = new System.Drawing.Point(293, 22);
             this.cbOption_XuatHang.Name = "cbOption_XuatHang";
-            this.cbOption_XuatHang.Size = new System.Drawing.Size(149, 30);
+            this.cbOption_XuatHang.Size = new System.Drawing.Size(149, 28);
             this.cbOption_XuatHang.TabIndex = 1;
             this.cbOption_XuatHang.Tag = "";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(575, 14);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 17);
+            this.label8.Size = new System.Drawing.Size(61, 16);
             this.label8.TabIndex = 42;
             this.label8.Text = "Số lượng";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(575, 98);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 17);
+            this.label6.Size = new System.Drawing.Size(70, 16);
             this.label6.TabIndex = 40;
             this.label6.Text = "Tổng Tiền";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(9, 146);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 17);
+            this.label3.Size = new System.Drawing.Size(74, 16);
             this.label3.TabIndex = 37;
             this.label3.Text = "Ngày nhập";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(575, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 17);
+            this.label2.Size = new System.Drawing.Size(58, 16);
             this.label2.TabIndex = 36;
             this.label2.Text = "Giá Xuất";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(9, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 17);
+            this.label1.Size = new System.Drawing.Size(89, 16);
             this.label1.TabIndex = 35;
             this.label1.Text = "Mã Hàng hóa";
             // 
             // lbMaPX
             // 
             this.lbMaPX.AutoSize = true;
-            this.lbMaPX.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMaPX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMaPX.Location = new System.Drawing.Point(9, 11);
             this.lbMaPX.Name = "lbMaPX";
-            this.lbMaPX.Size = new System.Drawing.Size(100, 17);
+            this.lbMaPX.Size = new System.Drawing.Size(93, 16);
             this.lbMaPX.TabIndex = 33;
             this.lbMaPX.Text = "Mã Phiếu Xuất";
             // 
             // txtPhieuXuat
             // 
-            this.txtPhieuXuat.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhieuXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhieuXuat.Location = new System.Drawing.Point(119, 8);
             this.txtPhieuXuat.Name = "txtPhieuXuat";
-            this.txtPhieuXuat.Size = new System.Drawing.Size(262, 23);
+            this.txtPhieuXuat.Size = new System.Drawing.Size(262, 22);
             this.txtPhieuXuat.TabIndex = 8;
             // 
             // txtSearch_XuatHang
             // 
-            this.txtSearch_XuatHang.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch_XuatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch_XuatHang.Location = new System.Drawing.Point(12, 22);
             this.txtSearch_XuatHang.Name = "txtSearch_XuatHang";
-            this.txtSearch_XuatHang.Size = new System.Drawing.Size(275, 27);
+            this.txtSearch_XuatHang.Size = new System.Drawing.Size(275, 26);
             this.txtSearch_XuatHang.TabIndex = 0;
             // 
             // pnlBody_XuatHang
@@ -259,14 +259,23 @@
             this.pnlThongTin.Size = new System.Drawing.Size(1129, 178);
             this.pnlThongTin.TabIndex = 8;
             // 
+            // label_TongTien
+            // 
+            this.label_TongTien.AutoSize = true;
+            this.label_TongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_TongTien.Location = new System.Drawing.Point(657, 99);
+            this.label_TongTien.Name = "label_TongTien";
+            this.label_TongTien.Size = new System.Drawing.Size(0, 20);
+            this.label_TongTien.TabIndex = 59;
+            // 
             // dtNgayXuat
             // 
             this.dtNgayXuat.AllowDrop = true;
             this.dtNgayXuat.CustomFormat = "yyyy/MM/dd";
-            this.dtNgayXuat.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtNgayXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtNgayXuat.Location = new System.Drawing.Point(119, 141);
             this.dtNgayXuat.Name = "dtNgayXuat";
-            this.dtNgayXuat.Size = new System.Drawing.Size(262, 23);
+            this.dtNgayXuat.Size = new System.Drawing.Size(262, 22);
             this.dtNgayXuat.TabIndex = 10;
             // 
             // btnLuu_XuatHang
@@ -276,7 +285,7 @@
             this.btnLuu_XuatHang.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnLuu_XuatHang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnLuu_XuatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu_XuatHang.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu_XuatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu_XuatHang.Location = new System.Drawing.Point(1001, 131);
             this.btnLuu_XuatHang.Name = "btnLuu_XuatHang";
             this.btnLuu_XuatHang.Size = new System.Drawing.Size(100, 32);
@@ -292,7 +301,7 @@
             this.btnClearText_XuatHang.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Violet;
             this.btnClearText_XuatHang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Violet;
             this.btnClearText_XuatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearText_XuatHang.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearText_XuatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClearText_XuatHang.Location = new System.Drawing.Point(875, 131);
             this.btnClearText_XuatHang.Name = "btnClearText_XuatHang";
             this.btnClearText_XuatHang.Size = new System.Drawing.Size(100, 32);
@@ -308,7 +317,7 @@
             this.btnBack_XuatHang.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBack_XuatHang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBack_XuatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack_XuatHang.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack_XuatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack_XuatHang.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnBack_XuatHang.Location = new System.Drawing.Point(749, 131);
             this.btnBack_XuatHang.Name = "btnBack_XuatHang";
@@ -320,38 +329,38 @@
             // 
             // txtMaNhanVien
             // 
-            this.txtMaNhanVien.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNhanVien.Location = new System.Drawing.Point(119, 98);
             this.txtMaNhanVien.Name = "txtMaNhanVien";
-            this.txtMaNhanVien.Size = new System.Drawing.Size(262, 23);
+            this.txtMaNhanVien.Size = new System.Drawing.Size(262, 22);
             this.txtMaNhanVien.TabIndex = 53;
             // 
             // txtSoLuong
             // 
-            this.txtSoLuong.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoLuong.Location = new System.Drawing.Point(653, 11);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(278, 23);
+            this.txtSoLuong.Size = new System.Drawing.Size(278, 22);
             this.txtSoLuong.TabIndex = 52;
             this.txtSoLuong.Text = "0";
             this.txtSoLuong.TextChanged += new System.EventHandler(this.txtSoLuong_TextChanged);
             // 
             // txtGiaXuat
             // 
-            this.txtGiaXuat.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiaXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGiaXuat.Location = new System.Drawing.Point(653, 52);
             this.txtGiaXuat.Name = "txtGiaXuat";
-            this.txtGiaXuat.Size = new System.Drawing.Size(278, 23);
+            this.txtGiaXuat.Size = new System.Drawing.Size(278, 22);
             this.txtGiaXuat.TabIndex = 49;
             this.txtGiaXuat.Text = "0";
             this.txtGiaXuat.TextChanged += new System.EventHandler(this.txtGiaXuat_TextChanged);
             // 
             // txtMaHangHoa
             // 
-            this.txtMaHangHoa.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaHangHoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaHangHoa.Location = new System.Drawing.Point(119, 50);
             this.txtMaHangHoa.Name = "txtMaHangHoa";
-            this.txtMaHangHoa.Size = new System.Drawing.Size(262, 23);
+            this.txtMaHangHoa.Size = new System.Drawing.Size(262, 22);
             this.txtMaHangHoa.TabIndex = 9;
             // 
             // dgvXuatHang
@@ -368,14 +377,14 @@
             this.SoLuong,
             this.GiaNhap,
             this.TongTien});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvXuatHang.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvXuatHang.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvXuatHang.Location = new System.Drawing.Point(0, 6);
             this.dgvXuatHang.Name = "dgvXuatHang";
             this.dgvXuatHang.ReadOnly = true;
@@ -457,15 +466,7 @@
             this.btnSearch_XuatHang.Size = new System.Drawing.Size(38, 34);
             this.btnSearch_XuatHang.TabIndex = 2;
             this.btnSearch_XuatHang.UseVisualStyleBackColor = true;
-            // 
-            // label_TongTien
-            // 
-            this.label_TongTien.AutoSize = true;
-            this.label_TongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_TongTien.Location = new System.Drawing.Point(657, 99);
-            this.label_TongTien.Name = "label_TongTien";
-            this.label_TongTien.Size = new System.Drawing.Size(0, 20);
-            this.label_TongTien.TabIndex = 59;
+            this.btnSearch_XuatHang.Click += new System.EventHandler(this.btnSearch_XuatHang_Click_1);
             // 
             // UCXuatHang
             // 
