@@ -104,7 +104,6 @@ namespace QLKho.GUI.UC.NhanVien
         {
             DATA.SqlConn sql = new DATA.SqlConn();
             dgvNhanVien.DataSource = sql.getDataTable("NhanVien");
-            
         }
 
         private void pnlThongTin_NhanVien_Paint(object sender, PaintEventArgs e)

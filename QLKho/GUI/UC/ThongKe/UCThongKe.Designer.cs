@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCThongKe));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn = new System.Windows.Forms.Button();
             this.lbThongKe = new System.Windows.Forms.Label();
@@ -60,7 +60,7 @@
             this.btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Tomato;
             this.btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato;
             this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn.Location = new System.Drawing.Point(880, 22);
             this.btn.Name = "btn";
             this.btn.Size = new System.Drawing.Size(146, 32);
@@ -72,24 +72,28 @@
             // lbThongKe
             // 
             this.lbThongKe.AutoSize = true;
-            this.lbThongKe.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbThongKe.Location = new System.Drawing.Point(782, 25);
             this.lbThongKe.Name = "lbThongKe";
-            this.lbThongKe.Size = new System.Drawing.Size(0, 21);
+            this.lbThongKe.Size = new System.Drawing.Size(0, 20);
             this.lbThongKe.TabIndex = 3;
             // 
             // cbOption_ThongKe
             // 
             this.cbOption_ThongKe.BackColor = System.Drawing.SystemColors.Control;
             this.cbOption_ThongKe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbOption_ThongKe.Font = new System.Drawing.Font("UTM Helve", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbOption_ThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbOption_ThongKe.FormattingEnabled = true;
             this.cbOption_ThongKe.Items.AddRange(new object[] {
-            "Hàng Hóa",
-            "Phiếu Nhập"});
+            "Số lượng hàng hóa",
+            "Số lượng nhân viên",
+            "Số lượng phiếu nhập",
+            "Số lượng phiếu xuất",
+            "Số lượng nhà cung cấp",
+            "Số lượng hàng hóa theo nhà cung cấp"});
             this.cbOption_ThongKe.Location = new System.Drawing.Point(12, 22);
             this.cbOption_ThongKe.Name = "cbOption_ThongKe";
-            this.cbOption_ThongKe.Size = new System.Drawing.Size(339, 30);
+            this.cbOption_ThongKe.Size = new System.Drawing.Size(339, 28);
             this.cbOption_ThongKe.TabIndex = 1;
             this.cbOption_ThongKe.Tag = "";
             // 
@@ -101,23 +105,24 @@
             this.btnThongKe.Size = new System.Drawing.Size(34, 34);
             this.btnThongKe.TabIndex = 2;
             this.btnThongKe.UseVisualStyleBackColor = true;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // dgvThongKe
             // 
             this.dgvThongKe.AllowUserToAddRows = false;
             this.dgvThongKe.AllowUserToDeleteRows = false;
+            this.dgvThongKe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvThongKe.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvThongKe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvThongKe.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvThongKe.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvThongKe.Location = new System.Drawing.Point(0, 0);
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvThongKe.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvThongKe.Location = new System.Drawing.Point(0, 69);
             this.dgvThongKe.Name = "dgvThongKe";
             this.dgvThongKe.ReadOnly = true;
             this.dgvThongKe.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;

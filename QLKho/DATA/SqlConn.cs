@@ -11,7 +11,7 @@ namespace QLKho.DATA
     class SqlConn
     {
         //  string connString = @"Data Source=HIEP\SQLEXPRESS;Initial Catalog=ThucTapNhom_QuanLyTruongTHPT;Integrated Security=True";
-        string connString = @"Data Source = desktop-p8i38nf\sqlexpress; Initial Catalog = QLKHO; Integrated Security = True ";
+        string connString = @"Data Source = WIN-8I9AU3SH08U\SQLEXPRESS; Initial Catalog = QLKho; Integrated Security = True ";
 
         SqlConnection conn = null;
 
@@ -68,7 +68,19 @@ namespace QLKho.DATA
             return dc;
         }
 
-
+        public DataTable Statistic(string _query)
+        {
+            openConn();
+            string query = _query;
+            SqlCommand sqlCommandcmd = new SqlCommand(query, conn);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommandcmd);
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+            sqlDataAdapter.Dispose();
+            sqlCommandcmd.Dispose();
+            closeConn();
+            return dataTable;
+        }
     }
 }
 
