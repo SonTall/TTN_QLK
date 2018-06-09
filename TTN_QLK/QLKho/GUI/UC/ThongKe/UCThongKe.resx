@@ -120,10 +120,10 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnThongKe.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAACKSURBVEhL3ZVRCoAwDEN3Pr3/50TEnUPbj0EZSNOOiFjYhyPda4LQUv5Yq5ja5FzBU0W/IIEc
-        wYftIDsC6A2I1mrgPlhonCoI7oOFbwCmIor+RbDz7MMpQI9gbH761nu3rAM6IBNXyAEdQI+IDqBHRAfQ
-        I6IAzomFo8vKLV2ZLQHRwaCV6U7wKcENfRHrU+Gvw5MAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAJdJREFUSEvd
+        lTEOAjEQA/O+4/8lJ4TgHeAUSNbJi73p7kaaYld2ki7jktzgDj9N73CDlidUByQ+oOUX7hL3OhdwNu7F
+        QcDZuBcHD7QvWNWiSh0tKpzOvCtR4XTmXQmHV7SoUkeLCqcz70pUOJ15V8LhFS2q1NGiwunMuxIVTmfe
+        lbwgFzrOz8oyv8w3VAf8cz4s+jLPxBhffRHrU95xDiIAAAAASUVORK5CYII=
 </value>
   </data>
 </root>

@@ -51,16 +51,32 @@ namespace QLKho.GUI.UC.NhanVien
 
         private void btnSearch_NhanVien_Click(object sender, EventArgs e)
         {
-            if(cbOption_NhanVien.Text.Equals("")) MessageBox.Show("Chọn tiêu chí cần sắp xếp", "ERROR!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            if (cbOption_NhanVien.Text.Equals("Mã Nhân Viên"))
+            string sql = "";
+            try
             {
+                SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=QLKho;Integrated Security=True");
+                conn.Open();
+                if (cbOption_NhanVien.Text.Equals("")) MessageBox.Show("Chọn tiêu chí cần sắp xếp", "ERROR!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+                if (cbOption_NhanVien.Text.Equals("Mã Nhân Viên"))
+                {
+                    sql = "select * from NhanVien nv where nv.MaNV='" + txtSearch_NhanVien.Text.Trim() + "'";
+                }
+
+                if (cbOption_NhanVien.Text.Equals("Họ và Tên"))
+                {
+                    sql = "select * from NhanVien nv where  nv.TenNV='" + txtSearch_NhanVien.Text.Trim() + "'";
+                }
+
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgvNhanVien.DataSource = dt;
             }
-
-            if (cbOption_NhanVien.Text.Equals("Họ và Tên"))
+            catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
         }
 

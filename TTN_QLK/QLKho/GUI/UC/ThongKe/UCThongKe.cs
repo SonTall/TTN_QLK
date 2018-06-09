@@ -49,5 +49,44 @@ namespace QLKho.GUI.UC.ThongKe
             dgvThongKe.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
             dgvThongKe.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            if (cbOption_ThongKe.Text.Equals("Số lượng hàng hóa"))
+            {
+                DATA.SqlConn sql = new DATA.SqlConn();
+                dgvThongKe.DataSource = sql.Statistic("select sum(a.soluong) as 'Số lượng hàng hóa' from (select count(MaHH) soluong from HangHoa group by MaHH) a");
+            }
+
+            if (cbOption_ThongKe.Text.Equals("Số lượng nhân viên"))
+            {
+                DATA.SqlConn sql = new DATA.SqlConn();
+                dgvThongKe.DataSource = sql.Statistic("select sum(a.soluong) as 'Số lượng phiếu xuất' from (select count(MaPX) soluong from PhieuXuat group by MaPX) a");
+            }
+
+            if (cbOption_ThongKe.Text.Equals("Số lượng phiếu nhập"))
+            {
+                DATA.SqlConn sql = new DATA.SqlConn();
+                dgvThongKe.DataSource = sql.Statistic("select sum(a.soluong) as 'Số lượng phiếu nhập' from (select count(MaPN) soluong from PhieuNhap group by MaPN) a");
+            }
+
+            if (cbOption_ThongKe.Text.Equals("Số lượng phiếu xuất"))
+            {
+                DATA.SqlConn sql = new DATA.SqlConn();
+                dgvThongKe.DataSource = sql.Statistic("select sum(a.soluong) as 'Số lượng phiếu xuất' from (select count(MaPX) soluong from PhieuXuat group by MaPX) a");
+            }
+
+            if (cbOption_ThongKe.Text.Equals("Số lượng hàng hóa theo nhà cung cấp"))
+            {
+                DATA.SqlConn sql = new DATA.SqlConn();
+                dgvThongKe.DataSource = sql.Statistic("select d.TenNCC, c.soluong from NhaCungCap d, (select a.MaNCC, (a.MaNCC) as soluong from HangHoa a, NhaCungCap b where a.MaNCC = b.MaNCC group by a.MaNCC) c where d.MaNCC = c.MaNCC");
+            }
+
+            if (cbOption_ThongKe.Text.Equals("Số lượng nhà cung cấp"))
+            {
+                DATA.SqlConn sql = new DATA.SqlConn();
+                dgvThongKe.DataSource = sql.Statistic("select sum(a.soluong) as 'Số lượng nhà cung cấp' from(select count(MaNCC) soluong from NhaCungCap group by MaNCC) a");
+            }
+        }
     }
 }

@@ -94,19 +94,33 @@ namespace QLKho.GUI.UC.HangHoa
 
         private void btnSearch_HangHoa_Click(object sender, EventArgs e)
         {
-            
+            string sql = "";
+            try
+            {
+                SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=QLKho;Integrated Security=True");
+                conn.Open();
                 if (cbOption_HangHoa.Text.Equals("")) MessageBox.Show("Chọn tiêu chí cần sắp xếp", "ERROR!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 if (cbOption_HangHoa.Text.Equals("Mã Hàng Hóa"))
                 {
-
+                    sql = "select hh.MaHH,TenHH,DonVi from HangHoa hh,NhaCungCap ncc where hh.MaNCC=ncc.MaNCC and hh.MaHH='" + txtSearch_HangHoa.Text.Trim() + "'";
                 }
 
                 if (cbOption_HangHoa.Text.Equals("Tên Hàng Hóa"))
                 {
-
+                    sql = "select hh.MaHH,TenHH,DonVi from HangHoa hh,NhaCungCap ncc where hh.MaNCC=ncc.MaNCC and hh.TenHH='" + txtSearch_HangHoa.Text.Trim() + "'";
                 }
-            
+
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgvHangHoa.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         // Xem them tai cac View code cua UCNhanVien,...
 

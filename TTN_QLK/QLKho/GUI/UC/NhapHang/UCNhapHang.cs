@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -179,35 +180,50 @@ namespace QLKho.GUI.UC.NhapHang
 
         private void btnSearch_NhapHang_Click(object sender, EventArgs e)
         {
-            if (cbOption_NhapHang.Text.Equals("")) MessageBox.Show("Chọn tiêu chí cần sắp xếp", "ERROR!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            if (cbOption_NhapHang.Text.Equals("Mã Phiếu nhập"))
+            string sql = "";
+            try
             {
-                
+                SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=QLKho;Integrated Security=True");
+                conn.Open();
+                if (cbOption_NhapHang.Text.Equals("")) MessageBox.Show("Chọn tiêu chí cần sắp xếp", "ERROR!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                if (cbOption_NhapHang.Text.Equals("Mã Phiếu nhập"))
+                {
+                    sql = "select pn.MaPN,Manv,MaHH,NgayNhap,SoLuong,GiaNhap,TongTien from ChiTietPN ct, PhieuNhap pn where pn.MaPN=ct.MaPN  and pn.MaPN='" + txtSearch_NhapHang.Text.Trim() + "'";
+                }
+
+                if (cbOption_NhapHang.Text.Equals("Mã Hàng hóa"))
+                {
+                    sql = "select pn.MaPN,Manv,MaHH,NgayNhap,SoLuong,GiaNhap,TongTien from ChiTietPN ct, PhieuNhap pn where pn.MaPN=ct.MaPN  and MaHH='" + txtSearch_NhapHang.Text.Trim() + "'";
+                }
+
+                if (cbOption_NhapHang.Text.Equals("Mã Nhân viên"))
+                {
+                    sql = "select pn.MaPN,Manv,MaHH,NgayNhap,SoLuong,GiaNhap,TongTien from ChiTietPN ct, PhieuNhap pn where pn.MaPN=ct.MaPN  and MaNV='" + txtSearch_NhapHang.Text.Trim() + "'";
+                }
+
+                if (cbOption_NhapHang.Text.Equals("Tổng tiền"))
+                {
+                    sql = "select pn.MaPN,Manv,MaHH,NgayNhap,SoLuong,GiaNhap,TongTien from ChiTietPN ct, PhieuNhap pn where pn.MaPN=ct.MaPN  and TonGien='" +txtSearch_NhapHang.Text.Trim() + "'";
+                }
+                if (cbOption_NhapHang.Text.Equals("Giá Nhập"))
+                {
+                    sql = "select pn.MaPN,Manv,MaHH,NgayNhap,SoLuong,GiaNhap,TongTien from ChiTietPN ct, PhieuNhap pn where pn.MaPN=ct.MaPN  and GiaNhap='" + txtSearch_NhapHang.Text.Trim() + "'";
+                }
+
+                if (cbOption_NhapHang.Text.Equals("Số lượng"))
+                {
+                    sql = "select pn.MaPN,Manv,MaHH,NgayNhap,SoLuong,GiaNhap,TongTien from ChiTietPN ct, PhieuNhap pn where pn.MaPN=ct.MaPN  and SoLuong='" + txtSearch_NhapHang.Text.Trim() + "'";
+                }
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgvNhapHang.DataSource = dt;
             }
-
-            if (cbOption_NhapHang.Text.Equals("Mã Hàng hóa"))
+            catch (Exception ex)
             {
-
-            }
-
-            if(cbOption_NhapHang.Text.Equals("Mã Nhân viên"))
-            {
-
-            }
-
-            if(cbOption_NhapHang.Text.Equals("Tổng tiền"))
-            {
-
-            }
-            if(cbOption_NhapHang.Text.Equals("Giá Nhập"))
-            {
-
-            }
-
-            if(cbOption_NhapHang.Text.Equals("Số lượng"))
-            {
-
+                MessageBox.Show(ex.Message);
             }
         }
 

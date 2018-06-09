@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -178,6 +179,37 @@ namespace QLKho.GUI.UC.NhaCungCap
                 txtMaNCC.Text = dgvNhaCungCap.SelectedRows[0].Cells[0].Value.ToString();
                 txtTenNCC.Text = dgvNhaCungCap.SelectedRows[0].Cells[1].Value.ToString();
                 txtSDTNCC.Text = dgvNhaCungCap.SelectedRows[0].Cells[2].Value.ToString();
+            }
+        }
+
+        private void btnSearch_NCC_Click(object sender, EventArgs e)
+        {
+            string sql = "";
+            try
+            {
+                SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=QLKho;Integrated Security=True");
+                conn.Open();
+                if (cbOption_NCC.Text.Equals("")) MessageBox.Show("Chọn tiêu chí cần sắp xếp", "ERROR!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                if (cbOption_NCC.Text.Equals("Mã Nhà Cung Cấp"))
+                {
+                    sql = "select * from NhaCungCap ncc where MaNCC='" + txtSearch_NCC.Text.Trim() + "'";
+                }
+
+                if (cbOption_NCC.Text.Equals("Họ Tên"))
+                {
+                    sql = "select ncc.MaNCC, TenNCC,SDT from NhaCungCap ncc,HangHoa hh where ncc.MaNCC=hh.MaNCC and ncc.TenNCC='" + txtSearch_NCC.Text.Trim() + "'";
+                }
+
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgvNhaCungCap.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

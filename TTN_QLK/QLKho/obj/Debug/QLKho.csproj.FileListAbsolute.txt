@@ -50,3 +50,21 @@ E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.csp
 E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.csproj.CopyComplete
 E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.exe
 E:\MTA\3_st\K2\Thực tập nhóm_TH14\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.pdb
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\bin\Debug\QLKho.exe.config
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\bin\Debug\QLKho.exe
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\bin\Debug\QLKho.pdb
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.csprojResolveAssemblyReference.cache
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.Form1.resources
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.HangHoa.UCHangHoa.resources
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.HoTro.UCHoTro.resources
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.NhaCungCap.UCNhaCungCap.resources
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.NhanVien.UCNhanVien.resources
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.NhapHang.UCNhapHang.resources
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.ThongKe.UCThongKe.resources
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.XuatHang.UCXuatHang.resources
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.Properties.Resources.resources
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.csproj.GenerateResource.cache
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.csproj.CoreCompileInputs.cache
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.csproj.CopyComplete
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.exe
+C:\Users\TuanThinh\Desktop\TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.pdb

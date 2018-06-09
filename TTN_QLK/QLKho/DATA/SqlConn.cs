@@ -68,7 +68,19 @@ namespace QLKho.DATA
             return dc;
         }
 
-
+        public DataTable Statistic(string _query)
+        {
+            openConn();
+            string query = _query;
+            SqlCommand sqlCommandcmd = new SqlCommand(query, conn);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommandcmd);
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+            sqlDataAdapter.Dispose();
+            sqlCommandcmd.Dispose();
+            closeConn();
+            return dataTable;
+        }
     }
 }
 

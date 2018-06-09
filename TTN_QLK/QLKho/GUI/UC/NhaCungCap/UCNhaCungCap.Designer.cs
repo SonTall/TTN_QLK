@@ -267,6 +267,7 @@
             this.btnSearch_NCC.Size = new System.Drawing.Size(38, 34);
             this.btnSearch_NCC.TabIndex = 2;
             this.btnSearch_NCC.UseVisualStyleBackColor = true;
+            this.btnSearch_NCC.Click += new System.EventHandler(this.btnSearch_NCC_Click);
             // 
             // dgvNhaCungCap
             // 
