@@ -22,5 +22,7 @@ namespace QLKho.ENTITY
             this.GiaNhap = gianhap;
             this.TongTien = tongtien;
         }
+
+        public object GiaXuat { get; set; }
     }
 }

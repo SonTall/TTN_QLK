@@ -66,3 +66,19 @@ D:\SonCao\TTN\GIT_TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.csproj.CoreCompileInputs
 D:\SonCao\TTN\GIT_TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.csproj.CopyComplete
 D:\SonCao\TTN\GIT_TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.exe
 D:\SonCao\TTN\GIT_TTN_QLK\TTN_QLK\QLKho\obj\Debug\QLKho.pdb
+C:\Users\Suu Nguyen\Desktop\TTN_QLK\QLKho\bin\Debug\QLKho.exe.config
+C:\Users\Suu Nguyen\Desktop\TTN_QLK\QLKho\obj\Debug\QLKho.exe
+C:\Users\Suu Nguyen\Desktop\TTN_QLK\QLKho\obj\Debug\QLKho.pdb
+C:\Users\Suu Nguyen\Desktop\TTN_QLK\QLKho\bin\Debug\QLKho.exe
+C:\Users\Suu Nguyen\Desktop\TTN_QLK\QLKho\bin\Debug\QLKho.pdb
+C:\Users\Suu Nguyen\Desktop\TTN_QLK\QLKho\obj\Debug\QLKho.csprojResolveAssemblyReference.cache
+C:\Users\Suu Nguyen\Desktop\TTN_QLK\QLKho\obj\Debug\QLKho.Form1.resources
+C:\Users\Suu Nguyen\Desktop\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.HangHoa.UCHangHoa.resources
+C:\Users\Suu Nguyen\Desktop\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.HoTro.UCHoTro.resources
+C:\Users\Suu Nguyen\Desktop\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.NhaCungCap.UCNhaCungCap.resources
+C:\Users\Suu Nguyen\Desktop\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.NhanVien.UCNhanVien.resources
+C:\Users\Suu Nguyen\Desktop\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.NhapHang.UCNhapHang.resources
+C:\Users\Suu Nguyen\Desktop\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.ThongKe.UCThongKe.resources
+C:\Users\Suu Nguyen\Desktop\TTN_QLK\QLKho\obj\Debug\QLKho.GUI.UC.XuatHang.UCXuatHang.resources
+C:\Users\Suu Nguyen\Desktop\TTN_QLK\QLKho\obj\Debug\QLKho.Properties.Resources.resources
+C:\Users\Suu Nguyen\Desktop\TTN_QLK\QLKho\obj\Debug\QLKho.csproj.GenerateResource.Cache

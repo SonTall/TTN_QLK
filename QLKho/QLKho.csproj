@@ -55,6 +55,7 @@
     <Compile Include="DATA\AddNCC.cs" />
     <Compile Include="DATA\AddNhanVien.cs" />
     <Compile Include="DATA\SqlConn.cs" />
+    <Compile Include="DATA\XuatHang_Controler.cs" />
     <Compile Include="ENTITY\ChiTietPhieuNhap.cs" />
     <Compile Include="ENTITY\ChiTietPhieuXuat.cs" />
     <Compile Include="ENTITY\HangHoa.cs" />

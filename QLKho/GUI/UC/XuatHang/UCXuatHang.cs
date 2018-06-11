@@ -13,6 +13,7 @@ namespace QLKho.GUI.UC.XuatHang
 {
     public partial class UCXuatHang : Form
     {
+        bool kt;
         public UCXuatHang()
         {
             InitializeComponent();
@@ -177,6 +178,7 @@ namespace QLKho.GUI.UC.XuatHang
 
         private void btnThem_XuatHang_Click(object sender, EventArgs e)
         {
+            kt = true;
             pnlThongTin.Visible = true;
             dgvXuatHang.Height = this.Height;
             ClearText();
@@ -196,17 +198,45 @@ namespace QLKho.GUI.UC.XuatHang
 
         private void btnLuu_XuatHang_Click(object sender, EventArgs e)
         {
-
+            ENTITY.PhieuXuat px = new ENTITY.PhieuXuat(txtPhieuXuat.Text.Trim(), txtMaNhanVien.Text.Trim(), dtNgayXuat.Value);
+            ENTITY.ChiTietPhieuXuat ctpx = new ENTITY.ChiTietPhieuXuat(txtPhieuXuat.Text.Trim(), txtMaHangHoa.Text.Trim(), txtSoLuong.Text.Trim(), txtGiaXuat.Text.Trim(), label_TongTien.Text.Trim());
+            if (kt == true)
+            {
+                DATA.XuatHang_Controler x = new DATA.XuatHang_Controler();
+                x.addPhieuXuat(px);
+                x.addChiTietPX(ctpx);
+            }
+            else
+            {
+                DATA.XuatHang_Controler h = new DATA.XuatHang_Controler();
+                h.editPhieuXuat(px);
+                h.editChiTietPhieuXuat(ctpx);
+            }
+            loadDataGirdView();
+            LockControl();
         }
 
         private void btnSua_XuatHang_Click(object sender, EventArgs e)
         {
+            kt = false;
+            pnlThongTin.Visible = true;
+            dgvXuatHang.Height = this.Height;
+            ClearText();
             OpenControl();
         }
 
         private void btnXoa_XuatHang_Click(object sender, EventArgs e)
         {
+            DialogResult check = MessageBox.Show("Bạn có muốn xóa không", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (check == DialogResult.Yes)
+            {
+                ENTITY.PhieuXuat px = new ENTITY.PhieuXuat(txtPhieuXuat.Text.Trim(), txtMaNhanVien.Text.Trim(), dtNgayXuat.Value);
+                DATA.XuatHang_Controler p = new DATA.XuatHang_Controler();
+                p.deletePhieuXuat(px);
 
+            }
+            loadDataGirdView();
+            LockControl();
         }
 
         

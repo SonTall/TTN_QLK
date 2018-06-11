@@ -11,7 +11,7 @@ namespace QLKho.DATA
     class SqlConn
     {
         //  string connString = @"Data Source=HIEP\SQLEXPRESS;Initial Catalog=ThucTapNhom_QuanLyTruongTHPT;Integrated Security=True";
-        string connString = @"Data Source = WIN-8I9AU3SH08U\SQLEXPRESS; Initial Catalog = QLKho; Integrated Security = True ";
+        string connString = @"Data Source = DESKTOP-CAVR9S4; Initial Catalog = QLKho; Integrated Security = True ";
 
         SqlConnection conn = null;
 
